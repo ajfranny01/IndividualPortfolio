@@ -1,0 +1,54 @@
+header {
+    background-color: #2c2c5e;
+    padding: 0.5rem 15%;
+    color: white;
+    box-shadow: 2px 2px 5px #35356e;
+    border-radius: 1px solid black;
+}
+
+.side-nav {
+    position: fixed;
+    left: 0px;
+    border: 2px solid #2c2c5e;
+    width: 150px;
+    float: left;
+    height: 100vh;
+    background-color: #2C2c5e;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px #35356e;
+}
+
+.side-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+
+}
+
+.side-nav :hover {
+    box-shadow: #35356e;
+}
+
+body {
+    background-color: #404070;
+    margin: 0;
+}
+
+h1{
+    font-family:'Caveat',serif;
+    color:white;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+h2{
+    font-family:'Caveat',serif;
+    color:white;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+main {
+    text-align: center;
+}
