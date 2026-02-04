@@ -1,67 +1,64 @@
 header {
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    height: 100px;
-    background-color: #2c2c5e;
-    padding: 0.5rem 15%;
-    color: white;
-
-    border-radius: 1px solid black;
+    padding: 18px 16px;
+    background-color: rgb(222, 184, 135);
 }
 
-.page-title{
-    position: fixed;
-    top:0;
-    left:70x;
-    font-family:'Caveat',serif;
-    color:white;
-    font-weight: 400;
-    font-size: 40px;
+.header-inner {
+    display:flex;
+    align-items:center;
+    gap:16px;
+    margin:0;
 }
 
-.profile-pic{
-    width: 100px;
-    height: 100px;
-    position: fixed;
-    left:25px; 
+.profile-pic {
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 96px;
+    height: 96px;
+    display: block;
+}
+
+
+.page-title {
+    margin:0;
+    font-family: 'Caveat', serif;
+    font-size: 3rem;
+    font-weight:700;
+    color: black;
 
 }
 
 .side-nav {
     position: fixed;
-    left: 0px;
-    bottom: 0;
-    border: 2px solid #2c2c5e;
-    width: 150px;
-    float: left;
-    height: 625px;
-    background-color: #2C2c5e;
-    text-decoration: none;
+    left:0;
+    align-items: center;;
+    border: 2px solid black;
+    padding:10px;
 
 }
-
 .side-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    display: flex;
+    display:block;
+    padding: 10px 14px;
+    border-radius:8px;
+    color: var(--muted);
+    font-weight:600;
+    text-align: left;
+}
 
+.side-nav a:hover,
+.side-nav a:focus {
+    background: burlywood;
+    color: var(--accent);
+    outline: none;
+    width:120x;
 }
 
 body {
-    background-color: #404070;
-    margin: 0;
+    margin:0;
 }
 
-h2,
-h3{
-    text-align: left; 
-    font-family:'Caveat',serif;
-    color:white;
-    font-weight: 400;
-    font-size: 35px;
-    line-height:1.5;
+footer {
+    position: fixed;
+    bottom:0;
 }
-
