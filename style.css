@@ -1,4 +1,5 @@
 header {
+    position: ;
     padding: 18px 16px;
     background-color: rgb(222, 184, 135);
     border-bottom: 2px solid;
@@ -20,26 +21,13 @@ header {
     display: block;
 }
 
-
-.page-title {
-    margin:0;
-    font-family: 'Caveat', serif;
-    font-size: 3rem;
-    font-weight:700;
-    color: black;
-
-}
-
-.side-nav {
-    position: fixed;
-    left:0;
-    border-right: solid;
-    height: 430px;
+nav {
     padding:10px;
     background-color: burlywood;
 
 }
-.side-nav a {
+
+nav a {
     display:inline-block;
     padding:20px;
     border-radius:8px;
@@ -49,8 +37,8 @@ header {
     margin:0;
 }
 
-.side-nav a:hover,
-.side-nav a:focus {
+nav a:hover,
+nav a:focus {
     background: burlywood;
     color: var(--accent);
     outline: none;
@@ -63,10 +51,6 @@ body {
 }
 
 footer {
-    position: fixed;
-    bottom:0;
-    right:0;
-    left:0;
     border-top: 2px solid;
     background-color: burlywood;
 }
