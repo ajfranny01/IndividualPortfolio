@@ -1,6 +1,7 @@
 header {
     padding: 18px 16px;
     background-color: rgb(222, 184, 135);
+    border-bottom: 2px solid;
 }
 
 .header-inner {
@@ -32,18 +33,20 @@ header {
 .side-nav {
     position: fixed;
     left:0;
-    align-items: center;;
-    border: 2px solid black;
+    border-right: solid;
+    height: 430px;
     padding:10px;
+    background-color: burlywood;
 
 }
 .side-nav a {
-    display:block;
-    padding: 10px 14px;
+    display:inline-block;
+    padding:20px;
     border-radius:8px;
-    color: var(--muted);
+    color: black;
+    text-decoration: none;
     font-weight:600;
-    text-align: left;
+    margin:0;
 }
 
 .side-nav a:hover,
@@ -56,6 +59,7 @@ header {
 
 body {
     margin:0;
+    background-color: rgb(221, 189, 147);
 }
 
 footer {
@@ -63,5 +67,6 @@ footer {
     bottom:0;
     right:0;
     left:0;
+    border-top: 2px solid;
     background-color: burlywood;
 }
