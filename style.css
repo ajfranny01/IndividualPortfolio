@@ -1,56 +1,77 @@
-header {
-    position: ;
-    padding: 18px 16px;
-    background-color: rgb(222, 184, 135);
-    border-bottom: 2px solid;
-}
-
-.header-inner {
-    display:flex;
-    align-items:center;
-    gap:16px;
-    margin:0;
-}
-
-.profile-pic {
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid black;
-    width: 96px;
-    height: 96px;
-    display: block;
-}
-
-nav {
-    padding:10px;
-    background-color: burlywood;
-
-}
-
-nav a {
-    display:inline-block;
-    padding:20px;
-    border-radius:8px;
-    color: black;
-    text-decoration: none;
-    font-weight:600;
-    margin:0;
-}
-
-nav a:hover,
-nav a:focus {
-    background: burlywood;
-    color: var(--accent);
-    outline: none;
-    width:120x;
-}
 
 body {
-    margin:0;
-    background-color: rgb(221, 189, 147);
+  margin: 0;
+  background-color: rgb(221, 189, 147);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* header container */
+header {
+  background-color: var(--bg);
+  border-bottom: 2px solid rgba(0,0,0,0.12);
+  color: aliceblue;
+}
+
+/* three-column flexible header */
+.header-inner{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content:center; /* left - center - right */
+  gap: 1rem;
+}
+
+/* left and right nav share styles */
+.header-left, .header-right {
+  display: flex;
+  align-items: center;
+  min-width: 0; /* helps with overflow */
+}
+
+/* center block - keeps profile perfectly centered */
+.header-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto; /* do not stretch */
+}
+
+/* profile image */
+.profile-pic {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid black;
+  display: block;
+}
+
+/* nav links */
+nav a {
+  display: inline-block;
+  padding: 10px 14px;
+  margin: 0 6px;
+  border-radius: 8px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color .18s, color .18s, transform .12s;
+}
+
+/* hover / focus */
+nav a:hover,
+nav a:focus {
+  background: var(--panel);
+  color: var(--accent);
+  transform: translateY(-2px);
+  outline: none;
 }
 
 footer {
     border-top: 2px solid;
     background-color: burlywood;
 }
+
+

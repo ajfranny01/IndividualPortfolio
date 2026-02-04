@@ -1,0 +1,66 @@
+header {
+    padding: 18px 16px;
+    background-color: rgb(222, 184, 135);
+    border-bottom: 2px solid;
+}
+
+.header-inner {
+    display:flex;
+    align-items:center;
+    gap:16px;
+    margin:0;
+}
+
+.header-left, 
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-center {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-pic {
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 96px;
+    height: 96px;
+    display: block;
+}
+
+nav {
+    padding:10px;
+    background-color: burlywood;
+
+}
+
+nav a {
+    display:inline-block;
+    padding:20px;
+    border-radius:8px;
+    color: black;
+    text-decoration: none;
+    font-weight:600;
+    margin:0;
+}
+
+nav a:hover,
+nav a:focus {
+    background: burlywood;
+    color: var(--accent);
+    outline: none;
+    width:120x;
+}
+
+body {
+    margin:0;
+    background-color: rgb(221, 189, 147);
+}
+
+footer {
+    border-top: 2px solid;
+    background-color: burlywood;
+}
