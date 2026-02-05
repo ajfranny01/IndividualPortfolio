@@ -1,33 +1,29 @@
-
-body {
-  margin: 0;
-  background-color: rgb(221, 189, 147);
-  color: var(--text);
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-}
-
 /* header container */
 header {
-  background-color: var(--bg);
-  border-bottom: 2px solid rgba(0,0,0,0.12);
+  background-color: burlywood;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
   color: aliceblue;
+  margin:0;
 }
 
 /* three-column flexible header */
-.header-inner{
+.header-inner {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content:center; /* left - center - right */
+  justify-content: center;
+  /* left - center - right */
   gap: 1rem;
 }
 
 /* left and right nav share styles */
-.header-left, .header-right {
+.header-left,
+.header-right {
   display: flex;
   align-items: center;
-  min-width: 0; /* helps with overflow */
+  min-width: 0;
+  /* helps with overflow */
 }
 
 /* center block - keeps profile perfectly centered */
@@ -35,7 +31,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 0 0 auto; /* do not stretch */
+  flex: 0 0 auto;
+  /* do not stretch */
 }
 
 /* profile image */
@@ -69,9 +66,41 @@ nav a:focus {
   outline: none;
 }
 
-footer {
-    border-top: 2px solid;
-    background-color: burlywood;
+body {
+  margin: 0;
+  background-color: rgb(221, 189, 147);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.body-main-pic{
+  width:100px;
+  height:100px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 400;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px;
+  margin: 0;
+
 }
 
 
+footer {
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  border-top: 2px solid;
+  background-color: burlywood;
+}
