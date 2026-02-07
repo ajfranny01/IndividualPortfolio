@@ -6,7 +6,7 @@ header {
     border-bottom: 2px solid rgba(0, 0, 0, 0.12);
     color: #F4F2F3;
     margin: 0;
-    box-shadow: gray;
+    box-shadow: 0 2px 30px gray;
 }
 
 .header-inner {
@@ -74,10 +74,10 @@ main {
     padding: 20px;
 }
 
-.intro.txt {
+.intro-txt {
     font-size: 20px;
-    font-weight: 600;
-    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    font-family: cormoran;
     display: inline-block;
     justify-content: center;
 }
@@ -88,7 +88,7 @@ main {
     padding-top: 110px;
     width: 360px;
     height: 440px;
-    border-radius: 12px;
+    border-radius: 20px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
     border: 6px solid rgba(255, 255, 255, 0.7);
 }
@@ -99,6 +99,8 @@ footer{
     font-size: 15px;
     font-weight: 600;
     font-family:'Times New Roman', serif;
+    padding: 2px;
+    box-shadow: 0 2px 30px grey;
 }
 
 a{
