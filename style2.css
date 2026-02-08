@@ -67,11 +67,10 @@ body {
     background-color: #F4F2F3;
 }
 
-main {
+.main-intro {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 20px;
 }
 
 .intro-txt {
@@ -85,12 +84,16 @@ main {
 .intro-img {
     display:block;
     justify-content: center;
-    padding-top: 110px;
+    padding: 2px;
     width: 360px;
     height: 440px;
     border-radius: 20px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
     border: 6px solid rgba(255, 255, 255, 0.7);
+}
+
+.main-aside-img{
+        padding: 150px; 
 }
 
 footer{
