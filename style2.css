@@ -74,10 +74,11 @@ body {
 }
 
 .intro-txt {
+    padding:20px;
     font-size: 20px;
     font-weight: 300;
     font-family: cormoran;
-    display: inline-block;
+    display:block;
     justify-content: center;
 }
 
@@ -93,8 +94,56 @@ body {
 }
 
 .main-aside-img{
-        padding: 150px; 
+    padding: 150px; 
 }
+
+
+
+.AlterServerProject{
+    display:flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.alterhomepage{
+    width: 400px;
+    height:auto;
+    padding: 2px;
+    border-radius: 20px;
+    border: 6px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    display:block;
+    justify-content: center;
+}
+
+.altertxt{
+    padding:20px;
+    display:block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer{
     background-color: #230903;
