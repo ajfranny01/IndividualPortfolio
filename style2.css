@@ -102,7 +102,7 @@ body {
 .AlterServerProject{
     display:flex;
     align-content: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .alterhomepage{
@@ -119,6 +119,11 @@ body {
 .altertxt{
     padding:20px;
     display:block;
+}
+
+h2,
+label{
+    padding:20px;
 }
 
 
