@@ -27,8 +27,8 @@ header {
 }
 
 .header-left a:hover,
-.header-right a:hover{
-    color:#9EBC9F;
+.header-right a:hover {
+    color: #9EBC9F;
 }
 
 
@@ -79,94 +79,82 @@ body {
 }
 
 .intro-txt {
-    padding:20px;
+    padding: 20px;
     font-size: 20px;
     font-weight: 300;
     font-family: cormoran;
-    display:block;
+    display: block;
     justify-content: center;
 }
 
 .intro-img {
-    display:block;
+    display: block;
     justify-content: center;
     padding: 2px;
     width: 360px;
     height: 440px;
     border-radius: 20px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-    border: 6px solid rgba(255, 255, 255, 0.7);
+    border: 6px solid #D3B88C;
 }
 
-.main-aside-img{
-    padding: 150px; 
+.main-aside-img {
+    padding: 150px;
 }
 
 
-
-.AlterServerProject{
-    display:flex;
+.AlterServerProject {
+    display: flex;
     align-content: center;
     justify-content: space-around;
 }
 
-.alterhomepage{
+.alterhomepage {
     width: 400px;
-    height:auto;
+    height: auto;
     padding: 2px;
     border-radius: 20px;
-    border: 6px solid rgba(255, 255, 255, 0.7);
+    border: 6px solid #D3B88C;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-    display:block;
+    display: block;
     justify-content: center;
 }
 
-.altertxt{
-    padding:20px;
-    display:block;
+.altertxt {
+    padding: 20px;
+    display: block;
 }
 
 h2,
-label{
-    padding:20px;
+label {
+    padding: 20px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer{
+footer {
+    margin: 0;
     background-color: #230903;
-    color:#F4F2F3;
+    color: #F4F2F3;
     font-size: 15px;
     font-weight: 600;
-    font-family:'Times New Roman', serif;
+    font-family: 'Times New Roman', serif;
     padding: 2px;
     box-shadow: 0 2px 30px grey;
+    justify-content:space-around;
 }
 
-a{
+.contact-info {
+    display: block;
+    align-content: flex-start;
+
+}
+
+.octicon-mark-github {
+    justify-content:space-around;
+    align-content: flex-end;
+}
+
+a {
     text-decoration: none;
-    color:#9EBC9F;
+    color: #9EBC9F;
 }
-
