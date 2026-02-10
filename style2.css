@@ -103,13 +103,12 @@ body {
 }
 
 
-.AlterServerProject {
+.project-format {
     display: flex;
-    align-content: center;
-    justify-content: space-around;
+    justify-content:flex-start;
 }
 
-.alterhomepage {
+.project-img {
     width: 400px;
     height: auto;
     padding: 2px;
@@ -117,12 +116,13 @@ body {
     border: 6px solid #D3B88C;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
     display: block;
-    justify-content: center;
 }
 
-.altertxt {
-    padding: 20px;
+.projecttxt {
+    padding-left:20px;
+    padding-right: 300px;
     display: block;
+    width: 500px;
 }
 
 h2,
@@ -140,7 +140,7 @@ footer {
     font-family: 'Times New Roman', serif;
     padding: 2px;
     box-shadow: 0 2px 30px grey;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
 .contact-info {
@@ -150,7 +150,7 @@ footer {
 }
 
 .octicon-mark-github {
-    justify-content:space-around;
+    justify-content: space-around;
     align-content: flex-end;
 }
 
