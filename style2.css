@@ -56,7 +56,6 @@ header a {
     color: var(--text);
     text-decoration: none;
     font-weight: 600;
-    transition: background-color .18s, color .18s, transform .12s;
 }
 
 header a:hover,
@@ -105,7 +104,7 @@ body {
 
 .project-format {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
 }
 
 .project-img {
@@ -119,7 +118,7 @@ body {
 }
 
 .projecttxt {
-    padding-left:20px;
+    padding-left: 20px;
     padding-right: 300px;
     display: block;
     width: 500px;
@@ -128,6 +127,10 @@ body {
 h2,
 label {
     padding: 20px;
+}
+
+label {
+    font-weight: 600;
 }
 
 
@@ -149,12 +152,28 @@ footer {
 
 }
 
-.octicon-mark-github {
-    justify-content: space-around;
-    align-content: flex-end;
-}
-
 a {
     text-decoration: none;
     color: #9EBC9F;
+}
+
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+.github-icon {
+    width: 32px;
+    height: 32px;
+    fill: currentColor;
+}
+
+.github-link {
+    color:#9EBC9F;
+}
+
+.github-link:hover .github-icon {
+    color:#D3B88C;
+    transform: scale(1.1);
 }
