@@ -26,12 +26,6 @@ header {
     min-width: 0;
 }
 
-.header-left a:hover,
-.header-right a:hover {
-    color: #9EBC9F;
-}
-
-
 .header-center {
     display: flex;
     justify-content: center;
@@ -39,13 +33,10 @@ header {
     flex: 0 0 auto;
 }
 
-.profile-pic {
-    width: 96px;
-    height: 96px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid black;
-    display: block;
+.header-left a:hover,
+.header-right a:hover {
+    color: #9EBC9F;
+    transform: translateY(-2px);
 }
 
 header a {
@@ -58,12 +49,13 @@ header a {
     font-weight: 600;
 }
 
-header a:hover,
-header a:focus {
-    background: var(--panel);
-    color: var(--accent);
-    transform: translateY(-2px);
-    outline: none;
+.profile-pic {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: block;
 }
 
 body {
@@ -144,12 +136,13 @@ footer {
     padding: 2px;
     box-shadow: 0 2px 30px grey;
     justify-content: space-around;
+    align-content: center;
+    display: flex;
 }
 
 .contact-info {
     display: block;
-    align-content: flex-start;
-
+    align-content: start;
 }
 
 a {
@@ -157,10 +150,43 @@ a {
     color: #9EBC9F;
 }
 
+footer {
+
+    background-color: #230903;
+    border-top: 2px solid rgba(0, 0, 0, 0.12);
+    color: #F4F2F3;
+    margin: 0;
+    box-shadow: 0 2px 30px gray;
+}
+
+.footer-inner {
+    display: flex;
+    padding:20px;
+    align-items: center;
+    justify-content:space-between;
+    gap: 70rem;
+}
+
+
+.footer-left {
+    display: block;
+    align-items:flex-start;
+}
+
+.footer-right {
+    display: block;
+    align-items:flex-end;
+}
+
+.footer-left a:hover,
+.footer-right a:hover {
+    color:#D3B88C;
+    transform: translateY(-2px);
+}
 
 .github-link {
-    display: inline-flex;
-    align-items: center;
+    display: block;
+    align-items: end;
 }
 
 .github-icon {
@@ -170,10 +196,11 @@ a {
 }
 
 .github-link {
-    color:#9EBC9F;
+    color: #9EBC9F;
 }
 
 .github-link:hover .github-icon {
-    color:#D3B88C;
+    color: #D3B88C;
     transform: scale(1.1);
 }
+
