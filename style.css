@@ -1,9 +1,19 @@
+ @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+.cormorant-garamond-cormorant {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight:600;
+  font-style: normal;
+}
+
+
 header {
     position: fixed;
     right: 0;
     left: 0;
     background-color: #230903;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+    border-bottom: 2px solid #230903;
     color: #F4F2F3;
     margin: 0;
     box-shadow: 0 2px 30px gray;
@@ -30,7 +40,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 0 0 auto;
 }
 
 .header-left a:hover,
@@ -44,7 +53,7 @@ header a {
     padding: 10px 14px;
     margin: 0 6px;
     border-radius: 8px;
-    color: var(--text);
+    color:#F4F2F3;
     text-decoration: none;
     font-weight: 600;
 }
@@ -72,8 +81,8 @@ body {
 .intro-txt {
     padding: 20px;
     font-size: 20px;
+    font-family: "Cormorant Garamond", serif;
     font-weight: 300;
-    font-family: cormoran;
     display: block;
     justify-content: center;
 }
@@ -117,13 +126,13 @@ body {
 }
 
 h2,
-label {
-    padding: 20px;
+label,
+p {
+    padding:20px;
+    font-family:"Cormorant Garamond", serif;
+    font-weight:600;
 }
 
-label {
-    font-weight: 600;
-}
 
 
 footer {
@@ -141,8 +150,7 @@ footer {
 }
 
 .contact-info {
-    display: block;
-    align-content: start;
+    padding:0px;
 }
 
 a {
@@ -184,23 +192,19 @@ footer {
     transform: translateY(-2px);
 }
 
-.github-link {
+.github-link{
     display: block;
     align-items: end;
+    color:#9EBC9F;
 }
 
-.github-icon {
-    width: 32px;
+.github-icon{
+    width:32px;
     height: 32px;
-    fill: currentColor;
+    fill:#9EBC9F;
 }
 
-.github-link {
-    color: #9EBC9F;
+.github-link:hover .github-icon{
+    color:#D3B88C;
+    transform:scale(1.1);
 }
-
-.github-link:hover .github-icon {
-    color: #D3B88C;
-    transform: scale(1.1);
-}
-
