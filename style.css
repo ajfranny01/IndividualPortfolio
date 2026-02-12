@@ -186,8 +186,7 @@ footer {
     align-items:flex-end;
 }
 
-.footer-left a:hover,
-.footer-right a:hover {
+.contact-info:hover{
     color:#D3B88C;
     transform: translateY(-2px);
 }
