@@ -193,18 +193,21 @@ footer {
 }
 
 .github-link{
-    display: block;
-    align-items: end;
-    color:#9EBC9F;
+    display:block;
+    align-items:end;
 }
 
-.github-icon{
-    width:32px;
-    height: 32px;
-    fill:#9EBC9F;
+.github-icon {
+    width:35px;
+    height:35px;
+    fill:currentColor;
+}
+
+.github-link{
+     color:#9EBC9F;
 }
 
 .github-link:hover .github-icon{
     color:#D3B88C;
-    transform:scale(1.1);
+    transform: scale(1.1);
 }
