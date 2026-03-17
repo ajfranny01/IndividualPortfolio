@@ -153,7 +153,12 @@ footer {
     padding:0px;
 }
 
-a {
+a.link-footer {
+    text-decoration: none;
+    color:#9EBC9F;
+}
+
+a.link-body {
     text-decoration: none;
     color: #230903;
 }
