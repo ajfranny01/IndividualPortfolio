@@ -127,6 +127,11 @@ body {
     width: 500px;
 }
 
+.media{
+text-align: center;
+width:400px;
+}
+
 h2,
 label,
 p {
