@@ -79,6 +79,7 @@ body {
 }
 
 .intro-txt {
+    text-indent: 1.2em;
     padding: 20px;
     font-size: 20px;
     font-family: "Cormorant Garamond", serif;
@@ -129,6 +130,7 @@ body {
 }
 
 .projecttxt {
+    text-indent: 1.2em;
     font-size:19px;
     flex: 1 1 auto;
     padding-left: 20px;
@@ -193,7 +195,7 @@ footer {
     border-top: 2px solid rgba(0, 0, 0, 0.12);
     color: #F4F2F3;
     margin: 0;
-    box-shadow: 0 2px 30px gray;
+
 }
 
 .footer-inner {
@@ -201,23 +203,33 @@ footer {
     padding:20px;
     align-items: center;
     justify-content:space-between;
-    gap: 70rem;
+    flex-wrap:wrap;
+    max-width: 1200px;
 }
 
 
 .footer-left {
     display: block;
     align-items:flex-start;
+    min-width:0;
 }
 
 .footer-right {
     display: block;
     align-items:flex-end;
+    min-width:0;
 }
 
 .contact-info:hover{
     color:#D3B88C;
     transform: translateY(-2px);
+}
+
+.footer-line{
+    border-top: 10px solid #230903;
+    margin:0;
+    width:100%;
+    box-shadow: 0 10px 30px gray;
 }
 
 .github-link{
