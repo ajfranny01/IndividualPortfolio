@@ -160,21 +160,6 @@ h2{
     font-size:30px;
 }
 
-
-footer {
-    margin: 0;
-    background-color: #230903;
-    color: #F4F2F3;
-    font-size: 15px;
-    font-weight: 600;
-    font-family: 'Times New Roman', serif;
-    padding: 2px;
-    box-shadow: 0 2px 30px grey;
-    justify-content: space-around;
-    align-content: center;
-    display: flex;
-}
-
 .contact-info {
     padding:0px;
 }
@@ -195,32 +180,29 @@ footer {
     border-top: 2px solid rgba(0, 0, 0, 0.12);
     color: #F4F2F3;
     margin: 0;
-    padding:0;
-    box-shadow: 0 -6px 25px rgba(0,0,0,0.35);
 
 }
 
 .footer-inner {
     display: flex;
-    padding: 32px 20px 24px;
-    align-items: flex-start;
+    padding:20px;
+    align-items: center;
     justify-content:space-between;
     flex-wrap:wrap;
-    gap:70px;
     max-width: 1200px;
 }
 
 
 .footer-left {
-    flex:1;
+    display: block;
+    align-items:flex-start;
     min-width:0;
 }
 
 .footer-right {
-   flex: 0 0 auto;
-   display: flex;
-   align-items: center;
-   padding-top: 8px;
+    display: block;
+    align-items:flex-end;
+    min-width:0;
 }
 
 .contact-info:hover{
@@ -232,7 +214,7 @@ footer {
     border-top: 10px solid #230903;
     margin:0;
     width:100%;
-    box-shadow: 0 4px 12px gray;
+    box-shadow: 0 10px 30px gray;
 }
 
 .github-link{
@@ -241,14 +223,13 @@ footer {
 }
 
 .github-img {
-    width:42px;
-    height:42px;
+    width:35px;
+    height:35px;
     fill:currentColor;
 }
 
 .github-link{
      color:#9EBC9F;
-     text-decoration:none;
 }
 
 .github-link:hover .github-img{
