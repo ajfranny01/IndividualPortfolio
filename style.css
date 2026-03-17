@@ -105,7 +105,9 @@ body {
 
 .project-format {
     display: flex;
-    justify-content: flex-start;
+    gap:20px;
+    margin-bottom:24px;
+    align-items: flex-start;
 }
 
 .project-img {
