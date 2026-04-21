@@ -7,6 +7,7 @@
   font-style: normal;
 }
 
+
 header {
     position: fixed;
     right: 0;
@@ -89,6 +90,10 @@ body {
 
 .intro-img {
     display: block;
+    justify-content: center;
+    padding: 2px;
+    width: 360px;
+    height: 440px;
     border-radius: 20px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
     border: 6px solid #D3B88C;
@@ -170,6 +175,7 @@ a.link-body {
 }
  
 footer {
+
     background-color: #230903;
     border-top: 2px solid rgba(0, 0, 0, 0.12);
     color: #F4F2F3;
