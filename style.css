@@ -12,11 +12,13 @@ header {
     position: fixed;
     right: 0;
     left: 0;
+    top: 0;
     background-color: #230903;
     border-bottom: 2px solid #230903;
     color: #F4F2F3;
     margin: 0;
     box-shadow: 0 2px 30px gray;
+    z-index:1000;
 }
 
 .header-inner {
@@ -26,8 +28,8 @@ header {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    padding: 6px 0;
 }
-
 
 .header-left,
 .header-right {
@@ -67,15 +69,36 @@ header a {
     display: block;
 }
 
+#About,
+#Projects,
+#Team\ Projects,
+#Contact {
+    scroll-margin-top: 130px;
+}
+
 body {
     margin: 0;
     background-color: #F4F2F3;
+    overflow-x: hidden;
+}
+
+main{
+    padding-top: 120px;
+}
+
+.intro-wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
 }
 
 .main-intro {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
 .intro-txt {
@@ -84,23 +107,28 @@ body {
     font-size: 20px;
     font-family: "Cormorant Garamond", serif;
     font-weight: 300;
-    display: block;
-    justify-content: center;
+    flex: 1 1 300px;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
 .intro-img {
     display: block;
-    justify-content: center;
-    padding: 2px;
-    width: 360px;
-    height: 440px;
     border-radius: 20px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
     border: 6px solid #D3B88C;
+    width: 100%;
+    max-width:360px;
+    height: auto;
 }
 
 .main-aside-img {
-    padding: 150px;
+    padding: 20px;
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: Center;
+
 }
 
 .projects-wrapper{
@@ -110,17 +138,43 @@ body {
     box-sizing:border-box
 }
 
-.project-format {
-    flex-wrap:nowrap;
+.project-card{
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.06), 0 8px 32px rgba(0,0,0,0.12);
+    border: 1px solid rgba(211, 184, 140, 0.4);
+    border-left: 4px solid #9EBC9F;
+    margin-bottom:28px;
+    overflow: hidden;
+}
+
+.project-info {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 260px;
+    min-width: 0;
+}
+
+.project-format {
+    display: flex;
+    flex-wrap: wrap;
     gap:24px;
-    margin-bottom:32px;
-    align-items: flex-start;
-    justify-content:space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+.project-format--flip .project-info {
+    order: 2;
+}
+
+.project-format--flip .media {
+    order: 1;
 }
 
 .project-img {
-    width: 110%;
+    width: 100%;
+    max-width: 100%;
     height: auto;
     border-radius: 20px;
     border: 6px solid #D3B88C;
@@ -132,16 +186,18 @@ body {
 .projecttxt {
     text-indent: 1.2em;
     font-size:19px;
-    flex: 1 1 auto;
+    flex: 1 1 260px;
     padding-left: 20px;
     display: block;
     min-width: 0;
     margin:0;
+    box-sizing: border-box;
 }
 
 .media{
 text-align: center;
-width:400px;
+flex: 0 1 400px;
+width: 0;
 }
 
 h2,
@@ -154,14 +210,24 @@ p {
 
 label{
     font-size:23px;
+    padding: 8px 20px 0 20px;
+    display: block;
 }
 
 h2{
     font-size:30px;
 }
 
-.contact-info {
-    padding:0px;
+footer h3 {
+    padding: 0 0 8px 0;
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+}
+
+footer p {
+    padding: 0;
+    margin: 4px 0;
 }
 
 a.link-footer {
@@ -173,35 +239,42 @@ a.link-body {
     text-decoration: none;
     color: #230903;
 }
- 
-footer {
 
+footer {
     background-color: #230903;
     border-top: 2px solid rgba(0, 0, 0, 0.12);
     color: #F4F2F3;
     margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
 
+.footer-divider {
+    border:none;
+    border-top: 2px solid #F4F2F3;
+    margin: 0;
+    width: 100%;
+    opacity: 1;
 }
 
 .footer-inner {
     display: flex;
-    padding:20px;
+    padding: 32px 40px;
+    gap: 40px;
     align-items: center;
     justify-content:space-between;
     flex-wrap:wrap;
-    max-width: 1200px;
+    width: 100%;
 }
 
 
 .footer-left {
     display: block;
-    align-items:flex-start;
     min-width:0;
 }
 
 .footer-right {
     display: block;
-    align-items:flex-end;
     min-width:0;
 }
 
@@ -214,22 +287,22 @@ footer {
     border-top: 10px solid #230903;
     margin:0;
     width:100%;
-    box-shadow: 0 10px 30px gray;
+    display: block;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    box-shadow: 0 -10px 30px gray;
 }
 
 .github-link{
     display:block;
-    align-items:end;
+    color: #9EBC9F;
 }
 
 .github-img {
     width:35px;
     height:35px;
     fill:currentColor;
-}
-
-.github-link{
-     color:#9EBC9F;
 }
 
 .github-link:hover .github-img{
