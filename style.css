@@ -80,12 +80,10 @@ body {
     margin: 0;
     background-color: #F4F2F3;
     overflow-x: hidden;
-    min-height: 100%
 }
 
 html {
      scroll-behavior: smooth;
-     height: 100%;
 }
 
 main{
